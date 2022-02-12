@@ -10,13 +10,22 @@ $order .= " with spicy-spicy sause";
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
 
-echo "<br><br>.............Task 2: Numbers<br>";
-$anyName = 5537;
-echo "$anyName\n"; 
+echo "<br><br>............Task 2: Numbers<br>";
+$anyName = 839;
+echo "$anyName\n";
 echo "<br>";
-$newName = 0.839;
+$newName = 704.58008;
 echo "$newName <br>";
-echo ($anyName - 5525), "<br>";
+echo ($anyName - 827), "<br>";
 $last_month = 1187.23;
 $this_month = 1089.98;
-echo ($last_month - $this_month), "<br>";
+echo ($last_month - $this_month), "<br><br>";
+
+echo "............Task 11: Multiply and divide <br>";
+$num_languages = 4;
+$months = 11;
+$days = $months * 16;
+$days_per_language = $days / $num_languages;
+echo "$days_per_language <br>";
+
+
