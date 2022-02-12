@@ -66,11 +66,11 @@ echo round(sqrt(379), 1), "<br>";
 echo round(sqrt(379), 2), "<br>";
 
 $arr = [
-    "floor" => floor(sqrt(587)),
-    "ceil" => ceil(sqrt(587)),
+    'floor' => floor(sqrt(587)),
+    'ceil' => ceil(sqrt(587)),
 ];
-echo "$arr[floor] <br>";
-echo "$arr[ceil] <br>";
+echo $arr['floor'], "<br>";
+echo $arr['ceil'], "<br>";
 
 echo max(array(4, -2, 5, 19, -130, 0, 10)), "<br>";
 echo min(array(4, -2, 5, 19, -130, 0, 10)), "<br>";
@@ -137,7 +137,7 @@ function repeatThreetimes(string $str)
 {
     return $str .= $str.$str;
 }
-echo repeatThreetimes("I am so tired from this and other homework <br>");
+echo repeatThreetimes("I doing this the whole day ");
 echo increaseEnthusiasm(repeatThreetimes("YES ")), "<br>";
 
 function cut(string $str, int $int=10)
@@ -173,6 +173,73 @@ function sumDigits(int $x)
     if ($sum >= 10) return sumDigits($sum);
     else return $sum;
 }
-echo sumDigits(444), "<br>";
+echo sumDigits(444), "<br><br>";
 
+echo "............TASK 16: Arrays <br>";
 
+$arr=[];
+for ($i = 0; $i < 10; $i++)
+{
+    $arr[$i]='';
+    for ($j = 0; $j < $i+1; $j++)
+        $arr[$i].='x';
+}
+foreach ($arr as $v)
+    echo "$v ";
+echo "<br>";
+
+function arrayFill(string $str, int $size)
+{
+    $newArr = [];
+    for ($i = 0; $i < $size; $i++)
+        $newArr[$i] = $str;
+    return $newArr;
+}
+$arr = arrayFill("x", 5);
+foreach ($arr as $v)
+    echo "$v ";
+echo "<br>";
+
+$arr = [[1,2,3],[4,5],[6]];
+foreach ($arr as $v)
+{
+    foreach ($v as $v2)
+        echo "$v2 ";
+    echo "<br>";
+}
+
+$count = 1;
+for($i = 0; $i < 3; $i++)
+    for($j = 0; $j < 3; $j++)
+        $arr[$i][$j] = $count++;
+foreach ($arr as $v)
+{
+    foreach ($v as $v2)
+        echo "$v2 ";
+    echo "<br>";
+}
+
+$arr = [2, 5, 3, 9];
+$result = $arr[0] * $arr[1] + $arr[2] * $arr[3];
+echo "$result <br>";
+
+$user = [
+    'name' => "Peter",
+    'surname' => "Parker",
+    'patronymic' => "is Spider-Man"
+];
+foreach ($user as $v)
+    echo "$v ";
+echo "<br>";
+
+$date = [
+    'year' => 2022,
+    'month' => 02,
+    'day' => 12
+];
+echo $date['year'], "-", $date['month'], "-", $date['day'];
+
+$arr = ['a', 'b', 'c', 'd', 'e'];
+echo sizeof($arr), "<br>";
+
+echo $arr[sizeof($arr)-1], " ", $arr[sizeof($arr)-2], "<br>";
