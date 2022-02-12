@@ -40,5 +40,64 @@ $answer /= 2;
 $answer -= $my_num;
 echo "$answer<br><br>";
 
+echo "............Task 14: Math function <br>";
+$a = 10; $b = 3;
+echo ($a % $b), "<br>";
+if ($a % $b === 0) echo "Делится: a / b = ", ($a / $b);
+else echo "Не делится";
+echo "<br>";
+$st = pow(2, 10);
+echo "$st <br>";
+echo sqrt(245), "<br>";
+$arr = [4, 2, 5, 19, 13, 0, 10]; $sum = 0;
+foreach ($arr as $v)
+    $sum += $v ** 2;
+echo sqrt($sum), "<br>";
+echo round(sqrt(379)), "<br>";
+echo round(sqrt(379), 1), "<br>";
+echo round(sqrt(379), 2), "<br>";
+$arr2 = [
+    "floor" => floor(sqrt(587)),
+    "ceil" => ceil(sqrt(587)),
+];
+echo "$arr2[floor] <br>";
+echo "$arr2[ceil] <br>";
+echo max(array(4, -2, 5, 19, -130, 0, 10)), "<br>";
+echo min(array(4, -2, 5, 19, -130, 0, 10)), "<br>";
+echo rand(0, 100), "<br>";
+for ($i=0; $i<10; $i++) {
+    $arr3[$i] = rand(-100, 100);
+    echo "$arr3[$i] ";
+};
+echo "<br>";
+$a = 25; $b= 30;
+echo abs($a - $b), "<br>";
+$arr4 = [1, 2, -1, -2, 3, -3];
+foreach ($arr4 as &$v) {
+    if ($v < 0) $v = abs($v);
+    echo "$v ";
+}
+unset($v);
+echo "<br>";
+$div = 30;
+for ($i=1; $i<sqrt($div); $i++)
+    if ($div % $i === 0) {
+        $divs[] = $i;
+        $divs[] = $div / $i;
+    }
+foreach ($divs as $v)
+    echo "$v ";
+echo "<br>";
+$arr6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+$count = 0; $sum = 0;
+foreach ($arr6 as $v)
+    if ($sum <= 10) {
+        $sum += $v;
+        $count++;
+    }
+echo "$count <br>";
+
+
+
 
 
