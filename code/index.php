@@ -8,7 +8,7 @@ $very_bad_unclear_name = "15 chicken wings";
 $order = &$very_bad_unclear_name;
 $order .= " with spicy-spicy sause";
 
-// Don't change the line below
+// Don't change the line below okay
 echo "\nYour order is: $very_bad_unclear_name.";
 
 echo "<br><br>............TASK 2: Numbers<br>";
