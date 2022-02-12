@@ -175,7 +175,7 @@ function sumDigits(int $x)
 }
 echo sumDigits(444), "<br><br>";
 
-echo "............TASK 16: Arrays <br>";
+echo "............TASK 17: Arrays <br>";
 
 $arr=[];
 for ($i = 0; $i < 10; $i++)
@@ -242,4 +242,45 @@ echo $date['year'], "-", $date['month'], "-", $date['day'];
 $arr = ['a', 'b', 'c', 'd', 'e'];
 echo sizeof($arr), "<br>";
 
-echo $arr[sizeof($arr)-1], " ", $arr[sizeof($arr)-2], "<br>";
+echo $arr[sizeof($arr)-1], " ", $arr[sizeof($arr)-2], "<br><br>";
+
+echo "............TASK 18: IF and ELSE <br>";
+
+function uselessFunction(int $int1, int $int2) : bool
+{
+    if ($int1 + $int2 > 10) return true;
+    else return false;
+}
+echo uselessFunction(5,9), "<br>";
+
+function uselessFunction2(int $int1, int $int2) : bool
+{
+    if ($int1 === $int2) return true;
+    else return false;
+}
+echo uselessFunction2(1,1), "<br>";
+
+$test = rand(0,1);
+echo ($test == 0) ? 'true<br>' : 'false<br>';
+
+$age = rand(0,150);
+if ($age < 10 && $age > 99) echo "wrong age! $age";
+else
+{
+    $sum = 0;
+    while ($age > 0)
+    {
+        $sum += $age % 10;
+        $age /= 10;
+    }
+    echo ($sum >= 9) ? 'Sum digits less 10<br>' : 'Sum digits less 100<br>';
+}
+
+$arr = [1, 2, 3];
+if (sizeof($arr) === 3)
+{
+    $sum = 0;
+    foreach ($arr as $v)
+        $sum += $v;
+    echo "$sum <br>";
+}
