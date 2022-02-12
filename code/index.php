@@ -30,4 +30,15 @@ echo "$days_per_language <br><br>";
 echo "............Task 12: Exponent <br>";
 echo (8 ** 2), "<br><br>";
 
+echo "............Task 13: Assigment operators <br>";
+$my_num = 2208;
+$answer = $my_num;
+$answer += 2;
+$answer *= 2;
+$answer -= 2;
+$answer /= 2;
+$answer -= $my_num;
+echo "$answer<br><br>";
+
+
 
