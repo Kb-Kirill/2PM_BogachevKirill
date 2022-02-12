@@ -95,9 +95,14 @@ foreach ($arr6 as $v)
         $sum += $v;
         $count++;
     }
-echo "$count <br>";
+echo "$count <br><br>";
 
-
-
+echo "............Task 15: Function 1 <br>";
+function printStringNumber() {
+    echo "Function is running... ";
+    return rand(0,99);
+}
+$my_num = printStringNumber();
+echo "$my_num<br>";
 
 
