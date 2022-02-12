@@ -12,8 +12,7 @@ echo "\nYour order is: $very_bad_unclear_name.";
 
 echo "<br><br>............Task 2: Numbers<br>";
 $anyName = 839;
-echo "$anyName\n";
-echo "<br>";
+echo "$anyName<br>";
 $newName = 704.58008;
 echo "$newName <br>";
 echo ($anyName - 827), "<br>";
@@ -26,6 +25,9 @@ $num_languages = 4;
 $months = 11;
 $days = $months * 16;
 $days_per_language = $days / $num_languages;
-echo "$days_per_language <br>";
+echo "$days_per_language <br><br>";
+
+echo "............Task 12: Exponent <br>";
+echo (8 ** 2), "<br><br>";
 
 
