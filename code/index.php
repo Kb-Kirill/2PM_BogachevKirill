@@ -293,6 +293,30 @@ for ($i=0; $i < 20; $i++)
         echo "x";
     echo "<br>";
 }
+echo "<br>";
 
+echo "............TASK 20: Combination of func <br>";
+
+$arr = [90, 42, 3, 9, 6, 34, 5, 55];
+echo array_sum($arr)/sizeof($arr), "<br>";
+
+echo array_sum(range(1, 100))."<br>";
+
+$arr = [1, 4, 9, 16, 25];
+(array_map('sqrt', $arr));
+foreach ($arr as $v)
+    echo "$v ";
+echo "<br>";
+
+$keys = range('a', 'z');
+$vals = range(1,26);
+$arr= array_combine($keys, $vals);
+print_r($arr);
+echo "<br>";
+
+$number = '1234567890';
+$arr = str_split($number, 2);
+$result = array_sum($arr);
+echo $result;
 
 
