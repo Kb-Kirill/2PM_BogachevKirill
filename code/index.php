@@ -282,5 +282,17 @@ if (sizeof($arr) === 3)
     $sum = 0;
     foreach ($arr as $v)
         $sum += $v;
-    echo "$sum <br>";
+    echo "$sum <br><br>";
 }
+
+echo "............TASK 19: Cycles <br>";
+
+for ($i=0; $i < 20; $i++)
+{
+    for ($j=0; $j < $i + 1; $j++)
+        echo "x";
+    echo "<br>";
+}
+
+
+
