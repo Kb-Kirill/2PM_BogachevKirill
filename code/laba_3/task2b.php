@@ -2,7 +2,7 @@
 session_start();
 echo "Laba #3 Task #2-b <br><br>";
 
-if (!isset($_POST['Surname']) || !isset($_POST['Name']) || !isset($_POST['Age']))
+if (!isset($_POST['Surname'], $_POST['Name'], $_POST['Age']) )
 {
     echo "Error!";
     return;
