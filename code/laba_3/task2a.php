@@ -1,12 +1,15 @@
 <?php
 session_start();
+echo "Laba #3 Task #2-a <br><br>";
 
-echo "<br>TASK #2-a <br>";
-
-if (!isset($_POST["text"])) {
+if (!isset($_POST["text"]))
+{
     http_response_code(400);
-    echo "Bad request";
+    echo "Error!";
     return;
 }
 $text = $_POST["text"];
-echo $text;
+
+echo "You entered : '$text'<br>";
+echo "Word count: ", str_word_count($text) , "<br>";
+echo "Symbol count: ", iconv_strlen($text) , "<br>";
