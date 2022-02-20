@@ -4,7 +4,6 @@ echo "Laba #3 Task #2-a <br><br>";
 
 if (!isset($_POST["text"]))
 {
-    http_response_code(400);
     echo "Error!";
     return;
 }
