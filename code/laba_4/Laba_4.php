@@ -17,19 +17,19 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-    <title> 3. Board </title>
+    <title> Board </title>
     <meta charset="UTF-8">
 </head>
 
 <body>
 <form action="adAd.php" method="POST">
-    <p>HEADING<input type = text name = "name" required placeholder="leave ma swamp"></p>
-    EMAIL<input type = email name = "email" required placeholder="NotRickRoll">
+    EMAIL<input type = email name = "email" required placeholder="Batman@NotBruce.com">
+    <p>HEADING<input type = text name = "heading" required placeholder="NoRickRoll please"></p>
     <p><textarea name = "advert" required cols="40" rows="5"></textarea></p>
     <select name="adCategory">
-        <option>animals</option>
-        <option>videogames</option>
-        <option>etc</option>
+        <option>ДЗ весом 20 Гб</option>
+        <option>нереально интересная категория</option>
+        <option>Новая папка</option>
     </select><br><br>
     <button type="submit">add</button>
 </form>
