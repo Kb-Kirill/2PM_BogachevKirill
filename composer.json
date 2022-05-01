@@ -1,0 +1,12 @@
+{
+    "name": "weblab/laba4",
+    "description": "lab",
+    "autoload": {
+        "psr-4": {
+            "Weblab\\Laba4\\": "src/"
+        }
+    },
+    "require": {
+        "google/apiclient": "^2.12"
+    }
+}
